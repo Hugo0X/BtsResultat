@@ -1,0 +1,198 @@
+html, body
+{
+    background-color: #E1E1E1;
+    margin: 0;
+    height: 100%;
+    padding: 0;
+}
+
+body
+{
+    display: flex;
+    flex-direction: column;
+    font-family: "Roboto", sans-serif;
+}
+
+header, footer
+{
+    text-align: center;
+    background-color: white;
+}
+
+.headerObjectifBTS
+{
+    display: none;
+}
+
+header
+{
+    height: 80%;
+}
+
+footer
+{
+    margin-top: auto;
+    padding: 1%;
+}
+
+p
+{
+    color: darkslategrey;
+}
+
+.form
+{
+    text-align: left;
+    margin: auto ;
+    width: 50%;
+    background-color: #fafafa;
+    padding: 1% 5%;
+    font-size: 100%;
+    vertical-align: auto;
+    box-shadow: 3px 1px 1px grey;
+    margin: 2% auto ;
+}
+
+.question
+{
+    margin-bottom: 1%;
+    border: 1px solid #C3C3C3;
+    padding: 1%;
+}
+.divBouton
+{
+    text-align: center;
+    margin-top: 2%;
+}
+
+.bouton
+{
+    font-size: 100%;
+    width: auto;
+    height: auto;
+    padding: 1% 2%;
+    color: red;
+    background-color: #fafafa;
+    border-radius: 8px;
+    border: solid 1px red;
+    outline: none;
+    transition-duration: 400ms;
+}
+
+.bouton:hover
+{
+    color: white;
+    background-color: #FC3C3C;
+}
+
+.bouton:active
+{
+    background: #DCC924;
+    border: none;
+}
+
+h1
+{
+    text-align: center;
+    font-size: 150%;
+    text-decoration: underline;
+}
+
+h2
+{
+    font-size: 100%;
+}
+
+h3
+{
+    margin-top: 5%;
+    font-size: 95%;
+}
+
+input
+{
+    width: auto;
+    caret-color: grey;
+    border-radius: 5%;
+    padding: 1%;
+    border: 1px dashed grey;
+}
+
+.h2Center
+{
+    text-align: right;
+    font-size: 110%;
+}
+
+::selection 
+{
+    color: gold;
+}
+
+a
+{
+    text-decoration:  none;
+}
+
+@media screen and (min-width: 1080px) and (max-width: 1280px)
+{   
+    .form
+    {
+        box-shadow: none;
+    }
+}
+
+@media all and (max-width: 1080px)
+{  
+    header
+    {
+        height: 100%;
+    }
+
+    .form
+    {
+        width: 100%;
+        text-align: center;
+        padding: 2% 0;
+        font-size: 200%;
+    }
+
+    .question
+    {
+        margin-bottom: 1%;
+        padding: 5%;
+    }
+
+    .bouton
+    {
+        padding:2% 1%;
+    }
+
+    .bouton:active
+    {
+        color: white;
+        background-color: #FC3C3C;
+    }
+
+    input
+    {
+        width: 60%;
+        padding: 2%;
+    }
+
+    .headerObjectifBTS
+    {
+        display: unset;
+        border: none;
+        color: tomato;
+        font-size: 550%;
+        margin: auto;
+        text-decoration: none;
+    }
+
+    img
+    {
+        display: none;
+    }
+
+}

@@ -1,0 +1,220 @@
+html, body
+{
+    background-color: #E1E1E1;
+    margin: 0;
+    height: 100%;
+    padding: 0;
+}
+
+body
+{
+    display: flex;
+    flex-direction: column;
+    font-family: "Roboto", sans-serif;
+}
+
+header, footer
+{
+    text-align: center;
+    background-color: white;
+}
+
+header
+{
+    height: 80%;
+}
+
+footer
+{
+    margin-top: auto;
+    padding: 1%;
+}
+
+p
+{
+    color: darkslategrey;
+}
+
+h2
+{
+    font-size: 150%;
+    margin-top: 0;
+    text-align: center;
+    cursor: help;
+}
+
+.note
+{
+    position: sticky;
+    left: 35%; right: 65%;
+    font-size: 110%;
+}
+
+a
+{
+    text-decoration: none;
+}
+
+.box
+{
+    display: inline-block;
+    background-color: #fafafa;
+    margin: auto;
+    width: 50%;
+    border-radius: 0 0 3% 3%;
+    
+}
+
+.headerObjectifBTS
+{
+    display: none;
+}
+
+.resultatsMatieres
+{
+    font-weight: bold;
+    margin-left: 3%;
+}
+
+.resultatBts
+{
+    text-align: left;
+    font-weight: bold;
+    font-size: 130%;
+    margin-left: 3%;
+}
+
+.noteBts
+{
+    position: sticky;
+    left: 50%; right: 50%;
+    font-weight: bold;
+    font-size: 150%;
+}
+
+.divBouton
+{
+    text-align: center;
+}
+
+.bouton
+{
+    font-size: 120%;
+    width: auto;
+    height: auto;
+    padding: 1% 2%;
+    background-color: #fafafa;
+    border-radius: 8px;
+    border: solid 1px;
+    outline: none;
+    transition-duration: 400ms;
+    margin: 2% 0 0;
+}
+
+.bouton:hover
+{
+    color: #fafafa;
+    border: none;
+}
+
+.bouton:active
+{
+    animation-timing-function: ease-out;
+    transform-origin: bottom center;
+    animation-name: flyOut;
+    animation-duration: 5s;
+    color: #fafafa;
+    border: none;
+}
+
+@keyframes flyOut { /* style only XD */
+
+    1% {
+      transform: translate3d(0,0,0) scale(1);
+    }
+    20% {
+      transform: translate3d(0,100px,400px) rotateX(90deg);
+    }
+    30% {
+      transform: translate3d(300px,0px,100px) rotateX(95deg);
+    }
+    40% {
+      transform: translate3d(-600px,-200px,0px) rotateX(80deg);
+    }
+    60% {
+      transform: translate3d(2000px,-2000px,0px) rotateX(0deg);
+    }
+    70% {
+      transform: translate3d(-2000px, 2000px, 0px) rotateX(60deg) scale(5);
+    }
+    80% {
+      transform: translate3d(0,4000px,0px);
+    }
+    85% {
+      transform: translate3d(-0px,-0px,0px) scale(.07);
+    }
+    100% {
+      transform: translate3d(2000px,-2000px,0px);
+      display: none;
+    }
+}
+
+@media all and (max-width: 1080px)
+{  
+    header
+    {
+        height: 100%;
+    }
+
+    .box
+    {
+        margin-top: 4%;
+        width: 80%;
+    }
+
+    h2
+    {
+        font-size: 300%;
+    }
+
+    .note
+    {
+        font-size: 220%;
+    }
+
+    .resultatBts
+    {
+        font-size: 320%;
+    }
+
+    .noteBts
+    {
+        font-size: 200%;
+    }
+
+    .matiere
+    {
+        font-size: 150%;
+    }
+
+    .headerObjectifBTS
+    {
+        display: unset;
+        border: none;
+        color: tomato;
+        font-size: 550%;
+        margin: auto;
+    }
+
+    img
+    {
+        display: none;
+    }
+
+    .bouton
+    {
+        font-size: 250%;
+        padding: 1% 2%;
+        margin: 2% 0 2%;
+    }
+}

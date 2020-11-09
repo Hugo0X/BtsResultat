@@ -1,0 +1,58 @@
+html, body
+{
+    background-color: #E1E1E1;
+    margin: 0;
+    height: 100%;
+    padding: 0;
+}
+
+body
+{
+    font-family: "Roboto", sans-serif;
+}
+
+.form
+{
+    text-align: center;
+    width: 50%;
+    background-color: #fafafa;
+    font-size: 100%;
+    vertical-align: auto;
+    margin: auto ;
+    padding: 0;
+}
+
+h1
+{
+    text-align: center;
+    font-size: 175%;
+}
+
+h2
+{
+    text-align: center;
+}
+
+
+::selection 
+{
+    color: gold;
+} 
+
+/* @media screen and (min-width: 1080px) and (max-width: 1280px)
+{   
+    .form
+    {
+
+    }
+} */
+
+@media all and (max-width: 1080px)
+{  
+    .form
+    {
+        width: 100%;
+        padding: 1% 0;
+        font-size: 130%;
+    }
+}
